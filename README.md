@@ -1,7 +1,7 @@
 # Embedded Linux From Scratch Over The Network
 
 ## Introduction
-In this project, I tried to utilize some of the knowledge I have gained in my journey through the intensive Embedded Linux Course taught by the brilliant [Eng. Fady Khalil] as a part of ITI's 9-Month Internship Program Embedded Systems Track.
+In this project, I tried to utilize some of the knowledge I have gained in my journey through the intensive Embedded Linux Course taught by the brilliant [Eng. Fady Khalil](https://github.com/FadyKhalil) as a part of ITI's 9-Month Internship Program Embedded Systems Track.
 
 I will build a Linux From Scratch image for the Raspberry Pi 3B+ but, as a twist, I will be sticking to a theme which is file transfer over the network via protocols like TFTP and NFS. 
 
@@ -108,7 +108,7 @@ Since I am trying to stick to a theme here, I will be modifying some of the step
 
 1. The build process took about 20 minutes.
 
-![]() 
+![](./README_Photos/ctng-time.png) 
 
 1. Add the newly-created toolchain path to `.bashrc` and source it.
     ```bash
@@ -193,6 +193,7 @@ Since I am trying to stick to a theme here, I will be modifying some of the step
     ```bash
     time make -j12 Image dtbs ARCH=arm64 CROSS_COMPILE=aarch64-OverTheNetwork-linux-gnu-
     ```
+    ![](./README_Photos/linux-time.png)
 
 1. The kernel can be found under `linux/arch/arm64/boot`, the device tree binary can be found in `linux/arch/arm64/boot/dts/broadcom` under the name `bcm2837-rpi-3-b-plus.dtb`. 
 
