@@ -17,10 +17,10 @@ I have built this Yocto image on my trusty laptop **Thinkchad**: a Lenovo Thinkp
 
 ### Proposed Plan
 A typical Embedded Linux From Scratch image is built as follows:
-1. Create a cross toolchain using Crosstool-NG &rarr This provides a cross toolchain + Sysroot libraries for the target.
-1. Cross-build U-boot &rarr U-boot then acts as the bootloader needed to load the kernel, DTB, pass bootargs,... etc.
-1. Cross-build Linux &rarr This gives a Linux Image for the target + Device Tree Binary.
-1. Cross-build rootfs binaries and init process &rarr This along with creating the right directory structure (and populating it with sysroot libraries) gives a fully functional root filesystemwith an init process to initialize the system.
+1. Create a cross toolchain using Crosstool-NG &rarr; This provides a cross toolchain + Sysroot libraries for the target.
+1. Cross-build U-boot &rarr; U-boot then acts as the bootloader needed to load the kernel, DTB, pass bootargs,... etc.
+1. Cross-build Linux &rarr; This gives a Linux Image for the target + Device Tree Binary.
+1. Cross-build rootfs binaries and init process &rarr; This along with creating the right directory structure (and populating it with sysroot libraries) gives a fully functional root filesystemwith an init process to initialize the system.
 
 Since I am trying to stick to a theme here, I will be modifying some of the steps in this plan. You will see. :)
 
